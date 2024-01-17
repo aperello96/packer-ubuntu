@@ -4,10 +4,10 @@ autoinstall:
     early-commands:
         # workaround to stop ssh for packer as it thinks it timed out
         - sudo systemctl stop ssh
-    locale: en_US
-    keyboard:
-        layout: en
-        variant: us
+    # locale: en_US #Comment this lines (7-10) to prevent a fail when cloud-config inits
+    # keyboard:
+    #     layout: en
+    #     variant: us
     packages: [open-vm-tools, openssh-server, net-tools, perl, open-iscsi, ntp, curl, vim, ifupdown, zip, unzip, gnupg2, software-properties-common, apt-transport-https, ca-certificates, lsb-release, python3-pip, jq, cloud-init]
     network:
         network:
@@ -23,7 +23,7 @@ autoinstall:
         install-server: yes
         allow-pw: yes
         authorized-keys:
-            - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCb7fcDZfIG+SxuP5UsZaoHPdh9MNxtEL5xRI71hzMS5h4SsZiPGEP4shLcF9YxSncdOJpyOJ6OgumNSFWj2pCd/kqg9wQzk/E1o+FRMbWX5gX8xMzPig8mmKkW5szhnP+yYYYuGUqvTAKX4ua1mQwL6PipWKYJ1huJhgpGHrvSQ6kuywJ23hw4klcaiZKXVYtvTi8pqZHhE5Kx1237a/6GRwnbGLEp0UR2Q/KPf6yRgZIrCdD+AtOznSBsBhf5vqcfnnwEIC/DOnqcOTahBVtFhOKuPSv3bUikAD4Vw7SIRteMltUVkd/O341fx+diKOBY7a8M6pn81HEZEmGsr7rT ubuntu@ubuntu.local
+            - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC6Vu2HasvLigrldyvLa49ZdQ9CQ7Y5L3u3ZdmrqV53qytWoVgXu1vHBVE1Gr7BZzyWpgJBEdkem+YpgElHKBle9PcIatASuFXciLKVjarXOk51nF3Jym1NGd+CEu4ihpf3XrBxi9uN88qbxc9jkoxquE6W/lsTLR1vKlhSoH3eLUO9Poq+JdTjw9b9yrGBAY1x9Fwcqq+3XBoTMIZkn8SbeiB1O6ZM3uTWKHCCO1L9lpDrmy6P3NdU3+/LzXMTelGMIMvNd2K06bZYI6+r+0PXmk9uVgLEBUUs9a/UIaQf1a2GFo119eiXnDjtc4dhe1blks88Zy124Gr6cGTGoe+RF36GsTl+V38vFv3VNFQ98w7aQPlVRhTkWIi1cISjGzwgnFYm2WgJjUp5ogEfa7KO8WWthSTDIO/Xogymw5deEfMv1UFrlIe6hX05Jn1jfi2tNnwNzk/DKR2VWNu8U89G4sqRM6ev3nql3q5fu2mjaVKdn2bnbcJEvtQUWRajeZ0= albertperellocovas@MBP-de-Albert
     storage:
         layout:
             name: direct
