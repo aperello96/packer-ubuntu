@@ -22,6 +22,10 @@ $6$KU2P9m78xF3n$noEN/CV.0R4qMLdDh/TloUplmJ0DLnqi6/cP7hHgfwUu.D0hMaD2sAfxDT3eHP5B
 
 Check if url of ubuntu on "variables.pkrvars100GBdisk.hcl" file is still working. If not, update with the new url of the new ubuntu version and modify checksum
 
+## Create your own "vsphere.pkvars.hcl"
+
+Modify the variables of "vsphere.pkrvars-example.hcl" by yours and rename it to "vsphere.pkrvars.hcl"
+
 ## Running packer build with hcl
 
 ```sh
