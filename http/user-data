@@ -23,7 +23,7 @@ autoinstall:
         install-server: yes
         allow-pw: yes
         authorized-keys:
-            - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC6Vu2HasvLigrldyvLa49ZdQ9CQ7Y5L3u3ZdmrqV53qytWoVgXu1vHBVE1Gr7BZzyWpgJBEdkem+YpgElHKBle9PcIatASuFXciLKVjarXOk51nF3Jym1NGd+CEu4ihpf3XrBxi9uN88qbxc9jkoxquE6W/lsTLR1vKlhSoH3eLUO9Poq+JdTjw9b9yrGBAY1x9Fwcqq+3XBoTMIZkn8SbeiB1O6ZM3uTWKHCCO1L9lpDrmy6P3NdU3+/LzXMTelGMIMvNd2K06bZYI6+r+0PXmk9uVgLEBUUs9a/UIaQf1a2GFo119eiXnDjtc4dhe1blks88Zy124Gr6cGTGoe+RF36GsTl+V38vFv3VNFQ98w7aQPlVRhTkWIi1cISjGzwgnFYm2WgJjUp5ogEfa7KO8WWthSTDIO/Xogymw5deEfMv1UFrlIe6hX05Jn1jfi2tNnwNzk/DKR2VWNu8U89G4sqRM6ev3nql3q5fu2mjaVKdn2bnbcJEvtQUWRajeZ0= albertperellocovas@MBP-de-Albert
+            - your ssh-rsa ...
     storage:
         layout:
             name: direct
